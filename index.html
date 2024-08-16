@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JEXE - MEMBRESIAS</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Encabezado -->
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">JEXEREGEDIT</h1>
+            <nav class="nav">
+                <a href="#productos">Productos</a>
+                <a href="#pagos">Formas de Pago</a>
+                <a href="#testimonios">Confianza</a>
+                <a href="#contacto">Referencias</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Sección Principal -->
+    <section class="hero">
+        <div class="container hero-content">
+            <h2>te diran hacker</h2>
+            <p>Actualizaciones Semanales y Seguridad Garantizada</p>
+            <a href="#productos" class="btn btn-primary">Comprar Ahora</a>
+        </div>
+    </section>
+
+    <!-- Sección del Video -->
+    <section class="video">
+        <div class="container">
+            <video width="100%" controls>
+                <source src="vid/video.mp4" type="video/mp4">
+                Tu navegador no soporta el elemento de video.
+            </video>
+        </div>
+    </section>
+
+    <!-- Sección de Productos -->
+    <section id="productos" class="productos">
+        <div class="container">
+            <h2>Nuestros Servicios</h2>
+            <div class="product">
+                <img src="Img/iphone.png" alt="iPhone"> <!-- Imagen arriba -->
+                <div class="product-info">
+                    <h3>iPhone - MacOS</h3>
+                    <ul>
+                        <li>Actualización Semanal</li>
+                        <li>Porcentajes Superiores al 55%</li>
+                        <li>Seguridad y Efectividad Garantizadas</li>
+                        <li>Cero Baneo y Cero Blacklist</li>
+                        <li>Tutoriales de Instalación</li>
+                        <li>Compatibilidad: iOS 12-18</li>
+                    </ul>
+                    <div class="product-price">
+                        <span>Mes: $8 USD</span>
+                        <span>Vitalicio: $40 USD</span>
+                    </div>
+                    <a href="#cuestionario" class="btn btn-secondary">Comprar iOS</a>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="Img/android.png" alt="Android"> <!-- Imagen arriba -->
+                <div class="product-info">
+                    <h3>Android - HyperOS</h3>
+                    <ul>
+                        <li>Actualización Semanal</li>
+                        <li>Porcentajes Superiores al 55%</li>
+                        <li>Seguridad y Efectividad Garantizadas</li>
+                        <li>Cero Baneo y Cero Blacklist</li>
+                        <li>Tutoriales de Instalación</li>
+                        <li>Compatibilidad: Android 7-14</li>
+                    </ul>
+                    <div class="product-price">
+                        <span>Mes: $6 USD</span>
+                        <span>Vitalicio: $30 USD</span>
+                    </div>
+                    <a href="#cuestionario" class="btn btn-secondary">Comprar Android</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Formas de Pago -->
+    <section id="pagos" class="pagos">
+        <div class="container">
+            <h2>Formas de Pago</h2>
+            <img src="Img/pagos.png" alt="Formas de Pago">
+            <ul>
+                <li>Bancolombia (Solo Colombia)</li>
+                <li>Binance (Internacional)</li>
+                <li>Diamantes (Solo versión de 1 mes)</li>
+                <li>Nequi (Solo Colombia)</li>
+                <li>Remitly (Estados Unidos)</li>
+                <li>Western Union (Internacional)</li>
+                <li>Tarjeta de Crédito (Internacional)</li>
+                <li>Tarjeta de Débito (Internacional)</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Sección de Testimonios y Confianza -->
+    <section id="testimonios" class="testimonios">
+        <div class="container">
+            <h2>3 años</h2>
+            <p>Hemos brindado servicios de regedits por más de 3 años a más de 1000 clientes satisfechos. Nuestro servicio garantiza cero suspensiones y más del 98% de nuestros clientes están satisfechos.</p>
+        </div>
+    </section>
+
+    <!-- Cuestionario de Compra -->
+    <section id="cuestionario" class="cuestionario">
+        <div class="container">
+            <h2>¿Qué deseas comprar?</h2>
+            <form id="formulario">
+                <label for="sistema">¿Android o iOS?</label>
+                <select id="sistema" name="sistema" required>
+                    <option value="">Seleccionar</option>
+                    <option value="Android">Android</option>
+                    <option value="iOS">iOS</option>
+                </select>
+
+                <label for="duracion">¿1 mes o de por vida?</label>
+                <select id="duracion" name="duracion" required>
+                    <option value="">Seleccionar</option>
+                    <option value="1 mes">1 mes</option>
+                    <option value="de por vida">De por vida</option>
+                </select>
+
+                <label for="pago">Método de pago</label>
+                <select id="pago" name="pago" required>
+                    <option value="">Seleccionar</option>
+                    <option value="Bancolombia">Bancolombia</option>
+                    <option value="Binance">Binance</option>
+                    <option value="Diamantes">Diamantes</option>
+                    <option value="Nequi">Nequi</option>
+                    <option value="Remitly">Remitly</option>
+                    <option value="Western Union">Western Union</option>
+                    <option value="Tarjeta de Crédito">Tarjeta de Crédito</option>
+                    <option value="Tarjeta de Débito">Tarjeta de Débito</option>
+                </select>
+
+                <button type="submit" class="btn btn-primary">Enviar Pedido</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Sección de Contacto -->
+    <section id="contacto" class="contacto">
+        <div class="container">
+            <h2>Referencias</h2>
+            <p>Quieres comprobantes de que cumplimos? <a href="https://t.me/+56Wdh8JANmJjYzZh" target="_blank">canal de referencias</a> referencias de los ultimos 2 meses</p>
+            <a href="https://t.me/+56Wdh8JANmJjYzZh" class="btn btn-secondary">Ver canal</a>
+        </div>
+    </section>
+
+    <!-- Pie de Página -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 JEXE - Todos los derechos reservados</p>
+        </div>
+    </footer>
+
+    <!-- Script embebido -->
+    <script>
+        document.getElementById('formulario').addEventListener('submit', function(event) {
+            event.preventDefault(); // Evita que se recargue la página al enviar el formulario
+
+            // Obtener los valores seleccionados
+            var sistema = document.getElementById('sistema').value;
+            var duracion = document.getElementById('duracion').value;
+            var pago = document.getElementById('pago').value;
+
+            // Verificar que se hayan seleccionado todas las opciones
+            if (sistema && duracion && pago) {
+                var mensaje = `Hola, quiero comprar el producto para ${sistema}, con una duración de ${duracion} y pagar con ${pago}.`;
+                var url = `https://wa.me/50762211307?text=${encodeURIComponent(mensaje)}`;
+
+                // Redirigir a la URL
+                window.location.href = url;
+            } else {
+                alert('Por favor, complete todas las opciones.');
+            }
+        });
+    </script>
+</body>
+</html>
